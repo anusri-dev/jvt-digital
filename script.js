@@ -110,3 +110,35 @@ window.addEventListener('scroll', () => {
     });
 
 });
+
+(function() {
+    emailjs.init("g2MoIPsVsGjkHE8Dq");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_px37ecm",
+        "template_5tldqfn",
+        this
+    )
+
+    .then(() => {
+
+        alert("Message Sent Successfully ✅");
+
+        this.reset();
+
+    })
+
+    .catch((error) => {
+
+        alert("Failed ❌ Try Again");
+
+        console.log(error);
+
+    });
+
+});

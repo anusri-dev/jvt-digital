@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="mobile.css">
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- REMIX ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -94,31 +97,12 @@ content="Website Development, E-Commerce Website, Business Portfolio, Digital Se
 
             </div>
 
-            <div class="hero-features">
-
-                <div class="feature-box">
-                    <i class="ri-layout-4-line"></i>
-                    <span>Clean Design</span>
-                </div>
-
-                <div class="feature-box">
-                    <i class="ri-smartphone-line"></i>
-                    <span>Mobile Friendly</span>
-                </div>
-
-                <div class="feature-box">
-                    <i class="ri-flashlight-line"></i>
-                    <span>Fast Delivery</span>
-                </div>
-
-            </div>
-
         </div>
 
     <div class="hero-right">
 
     <div class="hero-circle">
-       <img src="images/hero.webp"
+       <img src="images/hero.png"
      alt="JVT Digital Web Solutions"
      width="520"
      height="520"
@@ -147,6 +131,24 @@ content="Website Development, E-Commerce Website, Business Portfolio, Digital Se
     </section>
 
 
+            <div class="hero-features">
+
+                <div class="feature-box">
+                    <i class="ri-layout-4-line"></i>
+                    <span>Clean Design</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-smartphone-line"></i>
+                    <span>Mobile Friendly</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-flashlight-line"></i>
+                    <span>Fast Delivery</span>
+                </div>
+
+            </div>
 
 
 
@@ -487,157 +489,141 @@ content="Website Development, E-Commerce Website, Business Portfolio, Digital Se
 
         </div>
 
-
-
-
-
         <div class="contact-right">
 
-            <form>
+<form id="contact-form">
 
-                <input type="text" placeholder="Your Name">
+    <input
+        type="text"
+        name="user_name"
+        placeholder="Your Name"
+        required
+    >
 
-                <input type="email" placeholder="Your Email">
+    <input
+        type="email"
+        name="user_email"
+        placeholder="Your Email"
+        required
+    >
 
-                <select>
+    <select name="service">
 
-                    <option>Select Service</option>
+        <option>Website Development</option>
 
-                    <option>Website Development</option>
+        <option>E-Commerce</option>
 
-                    <option>E-Commerce</option>
+        <option>Business Portfolio</option>
 
-                    <option>Business Portfolio</option>
+        <option>Online Services</option>
 
-                    <option>Online Services</option>
+    </select>
 
-                </select>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-                <textarea placeholder="Your Message"></textarea>
+    <button type="submit">
+        Send Message
+    </button>
 
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
+</form>
 
         </div>
 
     </section>
 
+    
+<footer class="footer">
 
+    <div class="footer-container">
 
+        <div class="footer-brand">
 
+            <h2>JVT Digital</h2>
 
-    <!-- ================= FOOTER ================= -->
+            <p>
+                Creative digital solutions for businesses,
+                startups and personal brands.
+            </p>
 
-    <footer class="footer">
+            <div class="social-icons">
 
-        <div class="footer-container">
+    <a href="https://www.instagram.com/jvt_digital?igsh=MXMwejdkejRwNnQyNg=="
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
 
-            <!-- FOOTER 1 -->
+    <a href="https://youtube.com/@jvt_digital?si=koL9V5f8fFEw7zwn"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-youtube"></i>
+    </a>
 
-            <div class="footer-box">
+    <a href="https://www.linkedin.com/in/anusri-j-76350a295"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
 
-                <h2>JVT Digital</h2>
+    <a href="https://github.com/anusri-dev/vairavel-accessories"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
 
-                <p>
-                    Creative digital solutions
-                    for businesses, students
-                    and startups.
-                </p>
-
-
-
-
-
-                <div class="social-icons">
-
-                    <a href="#" aria-label="Instagram">
-<i class="ri-instagram-line"></i>
-</a>
-
-<a href="#" aria-label="LinkedIn">
-<i class="ri-linkedin-line"></i>
-</a>
-
-<a href="#" aria-label="GitHub">
-<i class="ri-github-line"></i>
-</a>
-                </div>
-
-            </div>
-
-
-
-
-
-            <!-- FOOTER 2 -->
-
-            <div class="footer-box">
-
-                <h3>Quick Links</h3>
-
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#process">Our Process</a>
-                <a href="#">Contact</a>
-
-            </div>
-
-
-
-
-
-            <!-- FOOTER 3 -->
-
-            <div class="footer-box">
-
-                <h3>Services</h3>
-
-                <a href="#">Web Development</a>
-                <a href="#">E-Commerce</a>
-                <a href="#">Business Portfolio</a>
-                <a href="#">Online Services</a>
-
-            </div>
-
-
-
-
-
-            <!-- FOOTER 4 -->
-
-            <div class="footer-box">
-
-                <h3>Contact</h3>
-
-                <p>Email : jvtdigital@gmail.com</p>
-
-                <p>Location : Tamil Nadu</p>
-
-            </div>
+</div>
 
         </div>
 
+        <div class="footer-links">
 
+            <h3>Quick Links</h3>
 
+            <a href="#services">Services</a>
+            <a href="#online-services">E-Services</a>
+            <a href="#process">Our Process</a>
+            <a href="#contact">Contact</a>
 
+        </div>
 
-        <div class="footer-bottom">
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
 
             <p>
-                © 2026 JVT Digital Solutions.
-                All Rights Reserved.
+                <i class="ri-mail-line"></i>
+                jvtdigital@gmail.com
+            </p>
+
+            <p>
+                <i class="ri-map-pin-line"></i>
+                Tamil Nadu, India
+            </p>
+
+            <p>
+                <i class="ri-customer-service-2-line"></i>
+                Fast Response Support
             </p>
 
         </div>
 
-    </footer>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 JVT Digital Solutions • All Rights Reserved
+    </div>
+
+</footer>
 
     <!-- JS FILE -->
 
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
 
 </body>
 </html>
